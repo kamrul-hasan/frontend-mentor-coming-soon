@@ -15,7 +15,7 @@ btnClick.addEventListener('click', e => {
   // prevent default form action
   e.preventDefault();
   // email address validation
-  const email = emailInput.value;
+  const email = emailInput.value; 
 
   if (email == '' || email === undefined) {
     errors.push('Enter your email');
