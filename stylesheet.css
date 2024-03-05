@@ -120,8 +120,13 @@ body {
   top: 0;
   right: 0;
   cursor: pointer;
+  transition: 0.5s ease all;
 }
-
+.form-group button:hover {
+  background: linear-gradient(90deg, #e7e6e6, hsl(0deg 4.42% 67.94%));
+  box-shadow: 0 5px 20px 3px hsl(0deg 2.5% 83.04% / 87%);
+  transform: translateX(10px);
+}
 input::placeholder {
   color: var(--red-light);
 }
@@ -154,7 +159,15 @@ button:focus {
   right: 5.8rem;
   display: none;
 }
-
+.no-bg {
+  background: none;
+}
+.p-0 {
+  padding: 0;
+}
+.text-center {
+  text-align: center;
+}
 /*
 * Mobile View
 */
@@ -175,7 +188,15 @@ button:focus {
     min-width: 100%;
     padding: 0 1rem;
   }
-
+  .container-1.mobile {
+    padding: 1rem 0;
+    margin: 0;
+    background: #fff;
+  }
+  .wrapper {
+    padding: 0;
+    margin: 0;
+  }
   .logo { 
     margin: 2rem 0;
   }
@@ -186,11 +207,11 @@ button:focus {
     display: block;
   }
 
-  .image-box img.hero-desktop {
+  .image-box img.hero-ds {
     display: none;
   }
 
-  .image-box img.hero-mobile {
+  .image-box img.hero-mb {
     display: block;
     width: 100%;
   }
